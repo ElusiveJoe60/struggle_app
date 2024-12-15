@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Footer.module.css";
-import telegramIcon from "../../assets/telegramIcon.png";
-import VkIcon from "../../assets/vkIcon.png";
+import telegramIcon from "../../assets/telegramIcon"
+import VkIcon from "../../assets/VkIcon"
 
 const Footer = () => {
   return (
