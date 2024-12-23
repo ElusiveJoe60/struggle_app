@@ -1,17 +1,18 @@
+p, h1, h2, h3, h4 {
+        font-family: "Sawarabi Gothic", serif;
+}
+
 .footer_main {
         display: flex;
         align-items: center;
         gap: 45%;
         width: 1600px;
         height: 80px;
-        background: linear-gradient(to right, rgb(211, 211, 211), rgb(163, 163, 163));
         padding: 10px 25px;
-        border: 2px solid grey;
-        border-radius: 25px 25px 15px 15px;
 }
 
 .footer_p {
-        color: black;
+        color: rgb(255, 255, 255);
         font-size: 14px;
         width: 600px;
 }

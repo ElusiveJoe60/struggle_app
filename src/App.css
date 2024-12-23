@@ -4,10 +4,12 @@
   box-sizing: border-box;
 }
 
+p, h1, h2, h3, h4 {
+  font-family: "Sawarabi Gothic", serif;
+}
+
 html, body {
-  height: 100%;
-  background: linear-gradient(to right, rgb(187, 187, 187), rgb(45, 126, 45));
-  background-repeat: no-repeat;
+  background-color: #181A1B;
   display: flex;
   flex-direction: column;
 }
@@ -23,7 +25,7 @@ html, body {
 }
 
 .main {
-  width: 1600px;
+  width: 1720px;
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
@@ -32,14 +34,209 @@ html, body {
 
 .main_content {
   flex: 1; 
+  padding: 150px;
+}
+
+.main_content_intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin-bottom: 150px;
+}
+
+.main_content_intro_img {
+  width: 500px;
+  height: 500px;
 }
 
 .main_h1 {
   font-size: 24px;
   width: 600px;
   margin-bottom: 50px;
+  line-height: 35px;
 }
 
 .main_h2 {
   font-size: 20px;
+}
+
+.main_content_news {
+  margin-bottom: 150px;
+}
+
+.main_content_news_text {
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.main_content_news_ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main_content_news_ul_item {
+  text-align: left;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 128, 0, 0.150);
+  cursor: pointer;
+}
+
+.main_content_news_ul_item_h {
+  transition: .4s;
+}
+
+.main_content_news_ul_item:hover img{
+  transform: scale(1.05);
+}
+
+.main_content_news_ul_item:hover h3 {
+  color: green;
+}
+
+.main_content_news_ul_item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: .5s;
+  border-radius: 25px;
+}
+
+.main_content_clubs {
+  width: 1420px;
+  height: 400px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 128, 0, 0.150);
+  border-radius: 75px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+  transition: .4s;
+  cursor: pointer;
+  margin-bottom: 150px;
+}
+
+.main_content_clubs:hover {
+  transform: scale(1.1);
+  color: green;
+}
+
+.main_content_clubs_h {
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.main_content_clubs_list {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+}
+
+.main_content_clubs_list_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_content_clubs_list_item_h {
+  font-size: 65px;
+}
+
+.main_content_clubs_list_item_p {
+  font-size: 14px;
+}
+
+.main_content_competitions {
+  width: 1420px;
+  height: 400px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 128, 0, 0.150);
+  border-radius: 75px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .4s;
+  cursor: pointer;
+  margin-bottom: 150px;
+}
+
+.main_content_competitions:hover {
+  transform: scale(1.1);
+  color: green;
+}
+
+.main_content_competitions_h {
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.main_content_competitions_list {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+}
+
+.main_content_competitions_list_h {
+  font-size: 65px;
+}
+
+.main_content_competitions_list_p {
+  font-size: 14px;
+}
+
+.main_content_coach_h {
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.main_content_coach_ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style: none; 
+  padding: 0; 
+}
+
+.main_content_coach_ul_item {
+  display: flex;
+  align-items: start;
+  text-align: center;
+  border-radius: 8px; 
+  padding: 16px; 
+  box-shadow: 1px 1px 10px 1px rgba(0, 128, 0, 0.150);
+  gap: 25px;
+  cursor: pointer;
+}
+
+.main_content_coach_ul_item:hover img {
+  transform: translateY(-10px)
+}
+
+.main_content_coach_ul_item:hover h3 {
+  color: green;
+}
+
+.main_content_coach_ul_item_img {
+  width: 350px; 
+  height: 350px;
+  border-radius: 25px;
+  object-fit: cover; 
+  margin-bottom: 12px; 
+  transition: .4s;
+}
+
+.main_content_coach_ul_item_name {
+  font-size: 24px;
+  transition: .4s;
+}
+
+.main_content_coach_ul_item_p {
+  font-size: 16px;
+  text-align: start;
 }

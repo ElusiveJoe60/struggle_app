@@ -7,6 +7,12 @@ const Navbar = () => {
         return (
                 <div className={classes.navbar_main}>
                         <img className={classes.navbar_img} src={logo}></img>
+                        <ul className={classes.navbar_ul}>
+                                <li className={classes.navbar_ul_item}>Новости</li>
+                                <li className={classes.navbar_ul_item}>Клубы</li>
+                                <li className={classes.navbar_ul_item}>Соревнования</li>
+                                <li className={classes.navbar_ul_item}>Наши тренеры</li>      
+                        </ul>
                 </div>
         )
 }
